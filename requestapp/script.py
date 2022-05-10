@@ -1,4 +1,5 @@
-#!/usr/bin/pyfile
+#script by rikardoroa
+#just python it!!
 import requests
 import gzip
 import json

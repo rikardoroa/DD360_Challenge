@@ -1,3 +1,5 @@
+#script by rikardoroa
+#just python it!
 from requestapp.script import geographic_data
 from datetime import datetime
 from datetime import timedelta
