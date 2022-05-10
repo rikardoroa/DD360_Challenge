@@ -19,14 +19,14 @@
 
 * 4 -> luego se debe copiar la carpeta **_requestapp_** y pegarla en la carpeta **_dags_** 
 
-## Note
+## Nota
 * no se debe copiar la carpeta **_requestapp_**  dentro de la ruta **_config / dags_** , no se debe confundir con esta ruta
 * por ningun motivo borrar las carpetas que se crean de manera automatica
 
 * 5 -> luego se deben ejecutar los siguientes comandos en consola:
      * 1. **_docker-compose up airflow-webserver_**
      * 2. **_docker-compose up airflow-scheduler_** 
-     * 2. **_docker-compose up airflow-worker_**
+     * 3. **_docker-compose up airflow-worker_**
 
 * 6 -> abrir el navegador en la direccion localhost:8080 y iniciar el dag **_request_data_**
 
