@@ -32,7 +32,7 @@
 
 ## Recomendaciones
 
-* si se desean instalar paquetes adicionales se puede utilizar el comando **_docker exec -it container_id /bin/bash y utilizar pip_**
+* si se desean instalar paquetes adicionales se puede utilizar el comando **_docker exec -it container_id /bin/bash y luego ejecutar pip install paquete**
 * otra manera de instalar paquetes adicionales es tambien utilizando la variable de entorno **__PIP_ADDITIONAL_REQUIREMENTS_** del archivo docker-compose
 
 ###### enjoy!
