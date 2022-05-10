@@ -110,8 +110,6 @@ class geographic_data:
             print("File not found!")
         finally:
             print("Data processed successfully!")
-        
-        #return self.df2
 
 
     def merging_df_data(self, **context):
@@ -142,18 +140,13 @@ class geographic_data:
             
                 else:
                     print("error")
-
-
             
             path = os.path.abspath("dags")
             now = datetime.now()
             dt_string = now.strftime("%Y%d%H%M%S")
             fullpath = os.path.join(path, "Average_temp")
             self.df2.to_excel(fullpath + "//" + dt_string + "_data.xlsx", header=True, index=False)
-
-            
-                    
-        
+             
         except FileNotFoundError:
             print("File not found!")
         finally:
