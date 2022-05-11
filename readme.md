@@ -33,7 +33,7 @@
 * 7 -> el dag se ejecuta cada hora, en la primera ejecucion crea tres carpetas: 
       * 1. **_Current_** : en esta carpeta se crearan los archivos con la actualizacion mas reciente de la union con la tabla clima y municipio
       * 2. **_Average_temp_** : en esta carpeta se crearan los archivos con el promedio de las temperaturas maximas y minimas de las dos ultimas horas
-      * 2. **_dailydata_** : en esta carpeta se crearan los archivos con la informacion historica
+      * 2. **_dailydata_** :  en esta carpeta se crearan los archivos con la informacion historica
 
 
 ## Recomendaciones
