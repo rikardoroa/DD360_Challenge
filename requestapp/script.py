@@ -81,9 +81,8 @@ class geographic_data:
         finally:
             print("all Files were saved!")
 
-    #funcion decoradora que toma los archivos de las dos ultimas horas
+    # funcion que toma los archivos de las dos ultimas horas
     # creando un dataframe que calcula el promedio de las temperaturas minimas y maximas
-    #@classmethod
     def processing_data(self,**context):
         try:
             #se guarda en una lista los archivos de las dos ultimas horas
@@ -142,6 +141,7 @@ class geographic_data:
                 else:
                     print("error")
             
+            # se guardan el archivo final en la ruta
             path = os.path.abspath("dags")
             now = datetime.now()
             dt_string = now.strftime("%Y%d%H%M%S")
@@ -154,7 +154,7 @@ class geographic_data:
             print("Data merged!")
 
 
-    #funcion para unir los archivos en uno solo
+    # funcion para unir los archivos en uno solo
     # en esta funcion se crea un dataframe para las transformaciones
     # el dataframe es exportado en un archivo excel y en json dentro de la carpeta Current
     @classmethod
