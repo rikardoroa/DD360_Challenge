@@ -41,6 +41,6 @@
 
 * si se desean instalar paquetes adicionales se puede utilizar el comando **_docker exec -it container_id /bin/bash y luego ejecutar pip install paquete**
 * otra manera de instalar paquetes adicionales es tambien utilizando la variable de entorno **__PIP_ADDITIONAL_REQUIREMENTS_** del archivo docker-compose
-* se recomienda utilizar visual studio code para correr la app
+* se recomienda utilizar **_visual studio code_** para correr la app
 
 ###### enjoy!
