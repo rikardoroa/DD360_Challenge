@@ -29,6 +29,7 @@
      * 3. **_docker-compose up airflow-worker_**
 
 * 6 -> abrir el navegador en la direccion localhost:8080 y iniciar el dag **_request_data_**
+     * 1. el usuario y password por defecto para entrar al GUI de airflow es **_airflow_**
 
 * 7 -> el dag se ejecuta cada hora, en la primera ejecucion crea tres carpetas: 
      * 1. **_Current_**  en esta carpeta se crearan los archivos con la actualizacion mas reciente de la union con la tabla clima y municipio
@@ -40,5 +41,6 @@
 
 * si se desean instalar paquetes adicionales se puede utilizar el comando **_docker exec -it container_id /bin/bash y luego ejecutar pip install paquete**
 * otra manera de instalar paquetes adicionales es tambien utilizando la variable de entorno **__PIP_ADDITIONAL_REQUIREMENTS_** del archivo docker-compose
+* se recomienda utilizar visual studio code para correr la app
 
 ###### enjoy!
