@@ -135,12 +135,13 @@ class geographic_data:
                         
                     self.df2.columns = self.df2.columns.droplevel()
                     self.df2 = self.df2.rename(columns={'': 'nmun'})
-                    # el dataframe resultante  del la operacion de los promedios
-                    # se guarda en un archivo excel dentro de la carpeta "Average_Temp"
+                    
             
                 else:
                     print("error")
-            
+
+            # el dataframe resultante  del la operacion de los promedios
+            # se guarda en un archivo excel dentro de la carpeta "Average_Temp"
             # se guardan el archivo final en la ruta
             path = os.path.abspath("dags")
             now = datetime.now()
