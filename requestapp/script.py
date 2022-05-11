@@ -35,7 +35,7 @@ class geographic_data:
         try:
             #se hace la llamada a la api y se descomprime el archivo y se carga en un json
             r = requests.get(url=self.url_d, headers=self.headers_, verify=False, stream=True)
-            data = gzip.decompress(r.content).decode('utf-8').encode()
+            data = gzip.decompress(r.content).decode('utf-8')
             #se carga la informacion del json en una lista para luego ser escritos en disco(I/O)
             data_dict = json.loads(data)
             self.payload.append(data_dict)
@@ -72,7 +72,6 @@ class geographic_data:
 
                 #se establece la ruta en disco (directorio) en donde se escribiran los archivos json
                 #el formato de salida del archivo tendra como nombre daily_data mas la fecha y hora de escritura
-
                 path1 = os.path.abspath("dags/dailydata/daily_data" + dt_string + ".json")
                 with open(path1, 'w') as d_json_file:
                     json.dump(self.df1, d_json_file)
@@ -135,8 +134,6 @@ class geographic_data:
                         
                     self.df2.columns = self.df2.columns.droplevel()
                     self.df2 = self.df2.rename(columns={'': 'nmun'})
-                    
-            
                 else:
                     print("error")
 
@@ -148,7 +145,6 @@ class geographic_data:
             dt_string = now.strftime("%Y%d%H%M%S")
             fullpath = os.path.join(path, "Average_temp")
             self.df2.to_excel(fullpath + "//" + dt_string + "_data.xlsx", header=True, index=False)
-             
         except FileNotFoundError:
             print("File not found!")
         finally:
@@ -172,9 +168,7 @@ class geographic_data:
                 print("error")
 
             else:
-                
                 json_file = [file for file in os.listdir(path0)][-1]
-            
                 # leemos los datos de los municipios
                 path3 = os.path.join(path2, file_name)
                 with open(path3, 'rt') as read_file:
