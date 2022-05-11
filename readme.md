@@ -19,9 +19,9 @@
 
 * 4 -> luego se debe copiar la carpeta **_requestapp_** y pegarla en la carpeta **_dags_** 
 
-## Nota
-* no se debe copiar la carpeta **_requestapp_**  dentro de la ruta **_config / dags_** , no se debe confundir con esta ruta
-* por ningun motivo borrar las carpetas que se crean de manera automatica
+     ## Nota
+     * no se debe copiar la carpeta **_requestapp_**  dentro de la ruta **_config / dags_** , no se debe confundir con esta ruta
+     * por ningun motivo borrar las carpetas que se crean de manera automatica
 
 * 5 -> luego se deben ejecutar los siguientes comandos en consola:
      * 1. **_docker-compose up airflow-webserver_**
